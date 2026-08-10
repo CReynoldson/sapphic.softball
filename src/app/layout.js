@@ -1,7 +1,7 @@
 import { Bagel_Fat_One, Mulish } from "next/font/google";
 import "./globals.css";
 import Footer from "@/app/components/Footer"
-import Navbar from "@/app/components/Navbar"
+import Navbar from "@/app/components/nav"
 
 const bagel = Bagel_Fat_One({
   variable: "--font-bagel",

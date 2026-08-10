@@ -4,7 +4,7 @@ import FullWidthSection from "../components/FullWidthSection";
 
 const Events = () => (
     <>
-        <FullWidthSection>
+        <FullWidthSection classNames="items-center">
             <Image
                 src="/drag_brunch.png"
                 width={400}

@@ -81,8 +81,9 @@ p {margin-bottom: 1rem;}
   position: absolute;
   height: 100vh;
   width: 100%;
-  top: 95px;
+  top: 100px;
   background-color: var(--color-gold);
+  z-index: 1;
 }
 
 #mobile-menu ul {padding: 2rem 1rem;}
@@ -163,6 +164,16 @@ p {margin-bottom: 1rem;}
   color: var(--color-text);
   padding: 2rem;
   border-radius: 4rem;
+  height: fit-content;
+}
+
+.card--image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card--image img {
+  object-fit: contain;
 }
 
 .card--coral {
@@ -245,8 +256,11 @@ div.image-container img {
   object-fit: cover;
 }
 
-@media(min-width: 768px) {
+@media(min-width: 1024px) {
   .full-width-section {
     flex-flow: row nowrap;
+  }
+  div.image-container img.desktop-contain {
+    object-fit: contain;
   }
 }

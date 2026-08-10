@@ -50,16 +50,19 @@ a {
   color: var(--color-link);
 }
 
-a.nav-link {
+nav a,
+footer a {
   color: var(--color-cream);
+  text-decoration: none;
+}
+nav a:hover,
+footer a:hover {
+  color: var(--color-text);
 }
 
 a:hover {
   cursor: pointer;
-  color: var(--color-link-hover);
-}
-a.nav-link:hover {
-  color: var(--color-link);
+  color: var(--color-lavender);
 }
 
 h1, h2, h3, h4 {

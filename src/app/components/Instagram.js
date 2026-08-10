@@ -1,8 +1,8 @@
 import { INSTAGRAM_LINK } from "./nav/links";
 
-export default () => (
+export default ({className}) => (
     <a
-        className="instagram-container"
+        className={className}
         href={INSTAGRAM_LINK}
     >
         <svg

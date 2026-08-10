@@ -1,16 +1,18 @@
 import Card from "../components/Card";
 import FullWidthSection from "../components/FullWidthSection";
+import { RULES_LINK } from "../components/nav/links";
 import { PARK_LINK } from "../page";
 
 
 const Tournament = () => (
-    <FullWidthSection>
+    <FullWidthSection classNames="justify-center">
         <div className="p-6">
-            <h1>2026 Tournament</h1>
+            <h1 className="text-center">2026 Tournament</h1>
+            <p>Check back soon for more details! For now, here's the TLDR: </p>
             <div className="p-2 flex flex-col gap-6 md:flex-row">
                 <Card cardClass="text-center card--coral">
                     <h2>Where</h2>
-                    <p className="text-lg"><a href={PARK_LINK}>MacDonald Park, Victoria, BC</a></p>
+                    <p className="text-lg"><a target="blank" href={PARK_LINK}>MacDonald Park, Victoria, BC</a></p>
                 </Card>
                 <Card cardClass="text-center card--gold">
                     <h2>When</h2>
@@ -33,7 +35,8 @@ const Tournament = () => (
                     </ul>
                 </Card>
             </div>
-            <p></p>
+            <p>Stickler for the rules? <a target="blank" href={RULES_LINK}>Check them out here</a></p>
+
         </div>
     </FullWidthSection>
 );

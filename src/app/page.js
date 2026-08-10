@@ -1,69 +1,132 @@
 import Image from "next/image";
+import Card from "./components/Card";
+import FullWidthSection from "./components/FullWidthSection";
+import LinkButton from "./components/LinkButton"
 
-export default function Home() {
-  return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.js
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+export const PARK_LINK =
+    "https://www.google.com/maps/place/MacDonald+Park,+Niagara+St,+Victoria,+BC/@48.4175622,-123.3832453,17.13z/data=!4m6!3m5!1s0x548f74bce6829f89:0x8c56088bfa864123!8m2!3d48.4175802!4d-123.3806791!16s%2Fm%2F012z2nn9?entry=ttu";
+
+export default async function Home() {
+    return (
+        <main className="flex flex-1 w-full max-w-3xl gap-3 flex-col items-center bg-cream sm:items-start p-0">
+            <FullWidthSection classNames="items-center">
+                <div className="image-container">
+                  <Image
+                      src="/wildkats.webp"
+                      width={400}
+                      height={400}
+                      alt="The Wildkats team photo"
+                  />
+                </div>
+                <div className="p-8">
+                    <h1>Sapphic Softball</h1>
+                    <p>
+                        This annual tournament brings together queer women,
+                        trans, Two-Spirit, and nonbinary players from across
+                        North America for a day centered on fun, connection, and
+                        inclusive sport.
+                    </p>
+                    <p>
+                        Whether you're brand new to softball or have been
+                        playing for years, this tournament is all about enjoying
+                        the game in a welcoming, supportive, recreational
+                        environment.
+                    </p>
+                </div>
+            </FullWidthSection>
+
+            <FullWidthSection>
+                <div className="image-container">
+                  <Image
+                      src="/firstbase.webp"
+                      width={400}
+                      height={400}
+                      alt="Who's on first"
+                  />
+                </div>
+                <div className="p-8">
+                    <h2>3rd Annual Tournament - Saturday, August 29th, 2026</h2>
+                    <p>
+                        Join us for a day of slow-pitch softball, drag, cold
+                        drinks, great food, and community at{" "}
+                        <a target="blank" href={PARK_LINK}>
+                            MacDonald Park
+                        </a>{" "}
+                        in Victoria!
+                    </p>
+                    <p>
+                        Everyone is welcome to come out, cheer on the teams, and
+                        enjoy the festivities!
+                    </p>
+                    <p>
+                        Bring your friends and family, settle in with a lawn
+                        chair, grab a drink from our diamond-side beer garden,
+                        enjoy delicious eats from our food trucks, catch our
+                        free midday drag performance, and spend the day at the
+                        ballpark.
+                    </p>
+                    <p>
+                        Whether you know someone playing or you're just looking
+                        for something fun to do, we'd love to have you there.
+                    </p>
+                </div>
+                <div className="image-container">
+                  <Image
+                      src="/connie.webp"
+                      width={400}
+                      height={400}
+                      alt="Batter up"
+                  />
+                </div>
+            </FullWidthSection>
+
+            <Card cardClass="card--rose p-6 m-8 mb-0">
+                <h2>Registration for 2026 is now closed</h2>
+                <p>
+                    We're thrilled to welcome 9 teams this year from across
+                    North America, making it our biggest tournament yet!
+                </p>
+            </Card>
+
+            <FullWidthSection classNames="p-6">
+                <Card cardClass="card--coral">
+                    <h2>Congratulations to The Clam Diggers!</h2>
+                    <p>Winners of the 2025 tournament at Hyacinth Park</p>
+                    <div className="image-container">
+                      <Image
+                          src="/clam_diggers.png"
+                          width={400}
+                          height={400}
+                          alt="The Clam Diggers team photo"
+                      />
+                    </div>
+                </Card>
+            </FullWidthSection>
+            <section className="w-full p-6">
+                <h2 className="text-center">Thank you to our sponsors!</h2>
+                <div className="flex flex-col flex-wrap gap-8 items-center">
+                    <Card cardClass="card--blue h-48">
+                      <Image
+                          src="/vp-logo.png"
+                          width={100}
+                          height={100}
+                          alt="Vicious Poodle Logo"
+                      />
+                    </Card>
+                    <Card cardClass="card--purp h-32">
+                      <Image
+                          src="/pabstlogo.png"
+                          width={150}
+                          height={150}
+                          alt="Pabst Logo"
+                      />
+                    </Card>
+                    <Card cardClass="card--gold text-center">
+                      <h2>Want to become a sponsor?</h2>
+                      <LinkButton label="Let Us Know!" link="mailto:volunteer@sapphicsoftball.com"/>
+                    </Card>
+                </div>
+            </section>
+        </main>
+    );
 }

@@ -33,6 +33,7 @@ const Tournament = () => (
                     </ul>
                 </Card>
             </div>
+            <p></p>
         </div>
     </FullWidthSection>
 );

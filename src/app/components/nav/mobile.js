@@ -28,6 +28,9 @@ export default ({closeMenu}) => (
                 <span>🥂</span>
                 <Link onClick={closeMenu} href="/events">Events</Link>
             </li>
+            <li>
+                <Link onClick={closeMenu} href="/rules">Rules</Link>
+            </li>
             <Instagram className="instagram-container"/>
         </ul>
     </div>

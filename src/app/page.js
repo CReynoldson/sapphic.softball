@@ -12,26 +12,28 @@ export default async function Home() {
             <FullWidthSection classNames="items-center flex-col lg:flex-row">
                 <div className="image-container">
                     <Image
-                        src="/wildkats.webp"
+                        src="/firstbase.webp"
                         width={400}
                         height={400}
-                        alt="The Wildkats team photo"
+                        alt="Outrunning a play to first"
                     />
                 </div>
                 <div className="p-8">
                     <h1 className="text-center lg:text-left">Sapphic Softball</h1>
                     <p>
-                        This annual tournament brings together queer women,
-                        trans, Two-Spirit, and nonbinary players from across
-                        North America for a day centered on fun, connection, and
-                        inclusive sport.
+                        Sapphic Softball was founded by a sports gay who wanted to play softball with their friends in a fun queer environment. It's a place where you can care deeply about the game, be gloriously bad at softball, or fall anywhere in between.
                     </p>
                     <p>
-                        Whether you're brand new to softball or have been
-                        playing for years, this tournament is all about enjoying
-                        the game in a welcoming, supportive, recreational
-                        environment.
+                        What started as an experiment in queer community-building has grown into an annual women’s/trans/two-spirit/nonbinary inclusive softball weekend in Victoria, B.C. in 2026, 100+ players from across north america will come together for the third annual tournament and a day centered on softball, fun, and inclusion in sport.
                     </p>
+                    <p>
+                        Whether you’re brand new to softball, have been playing for years, or just want to come out and cheer on these amazing players and teams, you’re welcome here. Sapphic softball is all about enjoying the game, building queer community, and creating a welcoming and supportive recreational environment.
+                    </p>
+                    <ul>
+                        <li>🥎 Brand new to softball? Come play!</li>
+                        <li>📣 Not playing? Come cheer!</li>
+                        <li>🌈 Queer? You're in the right place!</li>
+                    </ul>
                 </div>
             </FullWidthSection>
                 <h2 className="hidden lg:block mb-0 mt-1 pt-10">
@@ -40,7 +42,7 @@ export default async function Home() {
             <FullWidthSection>
                 <div className="image-container">
                     <Image
-                        src="/firstbase.webp"
+                        src="/high_fives.webp"
                         width={400}
                         height={400}
                         alt="Who's on first"

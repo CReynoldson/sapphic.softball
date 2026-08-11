@@ -98,7 +98,7 @@ export default async function Home() {
                 <Card cardClass="card card--coral w-full flex flex-col items-center lg:flex-row lg:justify-evenly lg:gap-2">
                     <div>
                         <h2>Congratulations to The Clam Diggers!</h2>
-                        <p>🏆 Winners of the 2025 tournament at Hyacinth Park 🪻</p>
+                        <p>🏆 Winners of the 2025 tournament at Hyacinth Park</p>
                     </div>
                     <div className="image-container lg:w-1/2 shrink lg:max-w-128">
                         <Image

@@ -24,7 +24,7 @@ export default async function Home() {
                         Sapphic Softball was founded by a sports gay who wanted to play softball with their friends in a fun queer environment. It's a place where you can care deeply about the game, be gloriously bad at softball, or fall anywhere in between.
                     </p>
                     <p>
-                        What started as an experiment in queer community-building has grown into an annual women’s/trans/two-spirit/nonbinary inclusive softball weekend in Victoria, B.C. in 2026, 100+ players from across north america will come together for the third annual tournament and a day centered on softball, fun, and inclusion in sport.
+                        What started as an experiment in queer community-building has grown into an annual women’s/trans/two-spirit/nonbinary inclusive softball weekend in Victoria, B.C. in 2026, 100+ players from across North America will come together for the third annual tournament and a day centered on softball, fun, and inclusion in sport.
                     </p>
                     <p>
                         Whether you’re brand new to softball, have been playing for years, or just want to come out and cheer on these amazing players and teams, you’re welcome here. Sapphic softball is all about enjoying the game, building queer community, and creating a welcoming and supportive recreational environment.

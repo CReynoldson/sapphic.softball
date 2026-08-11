@@ -4,14 +4,18 @@ import FullWidthSection from "../components/FullWidthSection";
 
 const Events = () => (
     <>
-        <FullWidthSection classNames="items-center">
-            <Image
-                src="/drag_brunch.png"
-                width={400}
-                height={600}
-                alt="drag brunch announcement poster"
-            />
-            <div className="p-6">
+        <FullWidthSection classNames="items-center lg:p-6 lg:gap-6">
+            <div className=" lg:w-1/3">
+                <div className="image-container">
+                    <Image
+                        src="/drag_brunch.png"
+                        width={400}
+                        height={600}
+                        alt="drag brunch announcement poster"
+                    />
+                </div>
+            </div>
+            <div className="p-6 lg:w-1/2">
                 <h2>Drag Brunch August 30th</h2>
                 <p>
                     Join us Sunday, August 30 at 1:30 PM at The Vicious Poodle
@@ -32,8 +36,9 @@ const Events = () => (
                 </a>
             </div>
         </FullWidthSection>
-        <FullWidthSection>
-            <div className="p-6">
+        <FullWidthSection classNames="lg:gap-6">
+            <div className="lg:w-1/3"></div>
+            <div className="p-6 lg:w-1/2">
                 <h2>More Events Coming Soon!</h2>
                 <p>
                     Check back here or{" "}

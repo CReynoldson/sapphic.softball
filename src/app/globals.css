@@ -50,6 +50,8 @@ a {
   color: var(--color-link);
 }
 
+nav {box-shadow: 0 2px 4px var(--color-lavender);}
+
 nav a,
 footer a {
   color: var(--color-cream);

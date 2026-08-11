@@ -21,7 +21,7 @@ const Tournament = () => (
                 </Card>
                 <Card cardClass="text-center card--purp">
                     <h2>Who</h2>
-                    <p className="text-lg">9 teams travelling from across North America!</p>
+                    <p className="text-lg">9 awesome teams!</p>
                     <ul className="text-left m-auto team-list">
                         <li>SuperSoakers</li>
                         <li>Fruit Salad</li>

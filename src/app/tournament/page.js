@@ -2,6 +2,7 @@ import Card from "../components/Card";
 import FullWidthSection from "../components/FullWidthSection";
 import Link from "next/link";
 import { PARK_LINK } from "../page";
+import { ArrowRight } from "lucide-react";
 
 const Tournament = () => (
     <>
@@ -47,13 +48,15 @@ const Tournament = () => (
         <div>
         <h2 className="text-center">But Wait, There's More!</h2>
         <FullWidthSection classNames="gap-6 justify-center  p-6">
-            <Card cardClass="card--blue p-6 text-center">
-                <h2>Sunday Drag Brunch</h2>
-                <Link href="/events">Details</Link>
+            <Card cardClass="card--rose p-6 text-center">
+                <h2>Tournament Afterparty</h2>
+                <p>Hosted by Glitch</p>
+                <Link href="/events#afterparty">Details 👀</Link>
             </Card>
-            <Card cardClass="card--purp p-6 text-center">
-                <h2>More Events Coming Soon!</h2>
-                <p>Stay tuned for updates 👀</p>
+            <Card cardClass="card--blue p-6 text-center">
+                <h2>Drag Brunch</h2>
+                <p>Hosted by The Vicious Poodle</p>
+                <Link href="/events#brunch">Details 👀</Link>
             </Card>
         </FullWidthSection>
         </div>

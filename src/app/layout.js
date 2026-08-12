@@ -2,6 +2,13 @@ import { Bagel_Fat_One, Mulish } from "next/font/google";
 import "./globals.css";
 import Footer from "@/app/components/Footer"
 import Navbar from "@/app/components/nav"
+import localFont from 'next/font/local'
+ 
+const varsity = localFont({
+  src: '../../public/fonts/varsity_regular.ttf',
+  variable: "--font-varsity"
+})
+
 
 const bagel = Bagel_Fat_One({
   variable: "--font-bagel",
@@ -25,7 +32,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${bagel.variable} ${mulish.variable} h-full antialiased`}
+      className={`${bagel.variable} ${mulish.variable} ${varsity.variable} h-full antialiased`}
     >
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

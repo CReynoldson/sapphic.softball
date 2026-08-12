@@ -10,26 +10,26 @@ export default ({closeMenu}) => (
         <ul>
             <li>
                 <span>🥎</span>
-                <Link onClick={closeMenu} href="/tournament">2026 Tournament</Link>
+                <Link onClick={closeMenu} href="/tournament">2026 TOURNAMENT</Link>
             </li>
             <li>
                 <span>💪</span>
                 <a href={VOLUNTEER_LINK}>
-                    Volunteer
+                    VOLUNTEER
                 </a>
             </li>
             <li>
                 <span>🤩</span>
                 <a href={MERCH_LINK}>
-                    Merch
+                    MERCH
                 </a>
             </li>
             <li>
                 <span>🥂</span>
-                <Link onClick={closeMenu} href="/events">Events</Link>
+                <Link onClick={closeMenu} href="/events">EVENTS</Link>
             </li>
             <li>
-                <Link onClick={closeMenu} href="/rules">Rules</Link>
+                <Link onClick={closeMenu} href="/rules">RULES</Link>
             </li>
             <Instagram className="instagram-container"/>
         </ul>

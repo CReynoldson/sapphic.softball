@@ -36,8 +36,8 @@ export default async function Home() {
                     </ul>
                 </div>
             </FullWidthSection>
-                <h2 className="hidden lg:block mb-0 mt-1 pt-10">
-                    3rd Annual Tournament - Saturday, August 29th, 2026
+                <h2 className="hidden lg:block mb-0 mt-1 pt-10 text-center">
+                    <span className="text-4xl">Saturday, August 29th, 2026</span><br/>3rd Annual Tournament
                 </h2>
             <FullWidthSection>
                 <div className="image-container">
@@ -50,19 +50,19 @@ export default async function Home() {
                     />
                 </div>
                 <div className="p-8">
-                    <h2 className="lg:hidden">
-                        3rd Annual Tournament - Saturday, August 29th, 2026
+                    <h2 className="lg:hidden text-center">
+                        <span className="text-4xl">Saturday, August 29th, 2026</span><br/>3rd Annual Tournament
                     </h2>
                     <p>
                         Join us for a day of slow-pitch softball, drag, cold
                         drinks, great food, and community at{" "}
-                        <a target="blank" href={PARK_LINK}>
+                        <a target="blank" href={PARK_LINK} className="text-lg font-extrabold">
                             MacDonald Park
                         </a>{" "}
                         in Victoria!
                     </p>
                     <p>
-                        Everyone is welcome to come out, cheer on the teams, and
+                        <span className="text-lg font-extrabold">Free for spectators!</span> Everyone is welcome to come out, cheer on the teams, and
                         enjoy the festivities!
                     </p>
                     <p>

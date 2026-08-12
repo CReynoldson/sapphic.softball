@@ -12,6 +12,7 @@
   --color-foreground: var(--foreground);
   --font-bagel: var(--font-bagel);
   --font-mulish: var(--font-mulish);
+  --font-varsity: var(--font-varsity);
 }
 
 @theme {
@@ -54,8 +55,10 @@ nav {box-shadow: 0 2px 4px var(--color-lavender);}
 
 nav a,
 footer a {
+  font-family: var(--font-varsity);
   color: var(--color-cream);
   text-decoration: none;
+  letter-spacing: 5px;
 }
 nav a:hover,
 footer a:hover {
@@ -71,6 +74,7 @@ h1, h2, h3, h4 {
   font-family: var(--font-bagel);
   line-height: 1.2;
   margin-bottom: 1.5rem;
+  letter-spacing: 2px;
 }
 
 h1 {
@@ -229,7 +233,6 @@ p {margin-bottom: 1rem;}
 .team-list {
   list-style: none;
   padding-left: 0;
-  margin: 0 auto;
   width: fit-content;
 }
 

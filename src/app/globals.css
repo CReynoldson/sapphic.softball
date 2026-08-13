@@ -154,7 +154,6 @@ p {margin-bottom: 1rem;}
 }
 
 .link-button {
-  display: inline-block;
   padding: 1rem 2rem;
   border: 1px solid var(--color-purp);
   border-radius: 5rem;
@@ -168,6 +167,10 @@ p {margin-bottom: 1rem;}
   cursor: pointer;
   color: var(--color-lavender);
   background: var(--color-cream);
+}
+.link-button.link-button--blue:hover {
+  background: var(--color-blue);
+  color: var(--color-blue-saturated);
 }
 .card {
   color: var(--color-text);

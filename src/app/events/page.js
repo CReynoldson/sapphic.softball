@@ -1,6 +1,7 @@
 import Image from "next/image";
-import { Phone } from "lucide-react";
+import { ExternalLink, Phone } from "lucide-react";
 import FullWidthSection from "../components/FullWidthSection";
+import LinkButton from "../components/LinkButton";
 
 const Events = () => (
     <div className="lg:py-16 lg:px-24">
@@ -21,6 +22,7 @@ const Events = () => (
                     <li>Poppy Petals</li>
                 </ul>
                 <p>Bring your teammates, your crush, your friends, and your competitive arcade energy. Game on!</p>
+                <LinkButton link="https://www.eventbrite.ca/e/1997795618474?aff=oddtdtcreator" label="Get Tickets" className="link-button--blue" Icon={ExternalLink}/>
             </div>
             <div className="order-first lg:order-last lg:w-1/3">
                 <div id="afterparty" className="image-container">
@@ -28,6 +30,7 @@ const Events = () => (
                         src="/afterparty.webp"
                         width={400}
                         height={600}
+                        loading="eager"
                         alt="afterparty announcement poster"
                     />
                 </div>

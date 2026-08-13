@@ -32,6 +32,7 @@ export default () => (
             <Card cardClass="card--gold text-center">
                 <h2>Want to become a sponsor?</h2>
                 <LinkButton
+                    className="inline-block"
                     label="Let Us Know!"
                     link="mailto:volunteer@sapphicsoftball.com"
                 />

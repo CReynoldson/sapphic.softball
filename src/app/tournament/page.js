@@ -2,8 +2,6 @@ import Card from "../components/Card";
 import FullWidthSection from "../components/FullWidthSection";
 import Link from "next/link";
 import { PARK_LINK } from "../page";
-import { ArrowRight } from "lucide-react";
-import Image from "next/image";
 
 const Tournament = () => (
     <>

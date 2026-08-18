@@ -19,15 +19,32 @@ export default async function Home() {
                     />
                 </div>
                 <div className="p-8">
-                    <h1 className="text-center lg:text-left">Sapphic Softball</h1>
+                    <h1 className="text-center lg:text-left">
+                        Sapphic Softball
+                    </h1>
                     <p>
-                        Sapphic Softball was founded by a sports gay who wanted to play softball with their friends in a fun queer environment. It's a place where you can care deeply about the game, be gloriously bad at softball, or fall anywhere in between.
+                        Sapphic Softball was founded by a sports gay who wanted
+                        to play softball with their friends in a fun queer
+                        environment. It's a place where you can care deeply
+                        about the game, be gloriously bad at softball, or fall
+                        anywhere in between.
                     </p>
                     <p>
-                        What started as an experiment in queer community-building has grown into an annual women’s/trans/two-spirit/nonbinary inclusive softball weekend in Victoria, B.C. in 2026, 100+ players from across North America will come together for the third annual tournament and a day centered on softball, fun, and inclusion in sport.
+                        What started as an experiment in queer
+                        community-building has grown into an annual
+                        women’s/trans/two-spirit/nonbinary inclusive softball
+                        weekend in Victoria, B.C. in 2026, 100+ players from
+                        across North America will come together for the third
+                        annual tournament and a day centered on softball, fun,
+                        and inclusion in sport.
                     </p>
                     <p>
-                        Whether you’re brand new to softball, have been playing for years, or just want to come out and cheer on these amazing players and teams, you’re welcome here. Sapphic softball is all about enjoying the game, building queer community, and creating a welcoming and supportive recreational environment.
+                        Whether you’re brand new to softball, have been playing
+                        for years, or just want to come out and cheer on these
+                        amazing players and teams, you’re welcome here. Sapphic
+                        softball is all about enjoying the game, building queer
+                        community, and creating a welcoming and supportive
+                        recreational environment.
                     </p>
                     <ul>
                         <li>🥎 Brand new to softball? Come play!</li>
@@ -36,11 +53,13 @@ export default async function Home() {
                     </ul>
                 </div>
             </FullWidthSection>
-                <h2 className="hidden lg:block mb-0 mt-1 pt-10 text-center">
-                    <span className="text-4xl">Saturday, August 29th, 2026</span><br/>3rd Annual Tournament
-                </h2>
-            <FullWidthSection>
-                <div className="image-container">
+            <h2 className="hidden lg:block mb-0 mt-1 pt-10 text-center">
+                <span className="text-4xl">Saturday, August 29th, 2026</span>
+                <br />
+                3rd Annual Tournament
+            </h2>
+            <FullWidthSection classNames="lg:flex-wrap">
+                <div className="image-container lg:hidden">
                     <Image
                         src="/high_fives.webp"
                         width={400}
@@ -49,35 +68,69 @@ export default async function Home() {
                         className="desktop-contain"
                     />
                 </div>
-                <div className="p-8">
+                <div className="p-8 lg:order-2">
                     <h2 className="lg:hidden text-center">
-                        <span className="text-4xl">Saturday, August 29th, 2026</span><br/>3rd Annual Tournament
+                        <span className="text-4xl">
+                            Saturday, August 29th, 2026
+                        </span>
+                        <br />
+                        3rd Annual Tournament
                     </h2>
                     <p>
-                        Join us for a day of slow-pitch softball, drag, cold
-                        drinks, great food, and community at{" "}
-                        <a target="blank" href={PARK_LINK} className="text-lg font-extrabold">
+                        Join us for a full day of slow-pitch softball, drag,
+                        cold drinks, and unapologetic queer joy at{" "}
+                        <a
+                            target="blank"
+                            href={PARK_LINK}
+                            className="text-lg font-extrabold"
+                        >
                             MacDonald Park
                         </a>{" "}
-                        in Victoria!
+                        in Victoria 🥎🏳️‍🌈✨️
                     </p>
                     <p>
-                        <span className="text-lg font-extrabold">Free for spectators!</span> Everyone is welcome to come out, cheer on the teams, and
-                        enjoy the festivities!
+                        <span className="uppercase">
+                            Free for spectators!
+                        </span>{" "}
+                        Everyone is welcome to come cheer on the teams, soak up
+                        the atmosphere, and enjoy a day at the ballpark.
                     </p>
                     <p>
-                        Bring your friends and family, settle in with a lawn
-                        chair, grab a drink from our diamond-side beer garden,
-                        enjoy delicious eats from our food trucks, catch our
-                        free midday drag performance, and spend the day at the
-                        ballpark.
+                        Bring your friends, fam, crush, or just yourself. Grab a
+                        drink from the beer garden, get a fresh cut at the
+                        diamond-side barber, catch our free midday drag
+                        performance, eat small batch ice cream, and enjoy a day
+                        of softball and queer fun.
                     </p>
                     <p>
-                        Whether you know someone playing or you're just looking
-                        for something fun to do, we'd love to have you there.
+                        Whether you know someone on the field, love softball,
+                        want to see some drag, or are simply looking for
+                        something fun to do on August 29th, come spend the day
+                        with us!
                     </p>
+                    <ul>
+                        <li>🥎 Slow-pitch softball</li>
+                        <li>🍺 Beer garden</li>
+                        <li>💈 Diamond-side barber</li>
+                        <li>👑 Free midday drag performance</li>
+                        <li>🌈 Queer joy & good times</li>
+                        <li>🎟️ Free for spectators</li>
+                    </ul>
+                    <ul className="mt-4">
+                        <li>
+                            📍{" "}
+                            <a
+                                target="blank"
+                                href={PARK_LINK}
+                                className="font-extrabold"
+                            >
+                                MacDonald Park, Victoria
+                            </a>
+                        </li>
+                        <li>📅 August 29th 9am-430pm</li>
+                    </ul>
                 </div>
-                <div className="image-container">
+                <div className="image-container lg:order-1">
                     <Image
                         src="/connie.webp"
                         width={400}
@@ -89,7 +142,9 @@ export default async function Home() {
             </FullWidthSection>
 
             <Card cardClass="card--rose p-6 m-8 lg:mt-0 mb-0">
-                <h2 className="text-center">Registration for 2026 is now closed</h2>
+                <h2 className="text-center">
+                    Registration for 2026 is now closed
+                </h2>
                 <p>
                     We're thrilled to welcome 9 teams this year from across
                     North America, making it our biggest tournament yet!
@@ -100,7 +155,9 @@ export default async function Home() {
                 <Card cardClass="card card--coral w-full flex flex-col items-center lg:flex-row lg:justify-evenly lg:gap-2">
                     <div>
                         <h2>Congratulations to The Clam Diggers!</h2>
-                        <p>🏆 Winners of the 2025 tournament at Hyacinth Park</p>
+                        <p>
+                            🏆 Winners of the 2025 tournament at Hyacinth Park
+                        </p>
                     </div>
                     <div className="image-container lg:w-1/2 shrink lg:max-w-128">
                         <Image
@@ -113,7 +170,7 @@ export default async function Home() {
                     </div>
                 </Card>
             </FullWidthSection>
-            <Sponsors/>
+            <Sponsors />
         </main>
     );
 }

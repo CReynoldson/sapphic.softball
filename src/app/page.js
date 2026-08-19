@@ -96,11 +96,12 @@ export default async function Home() {
                         the atmosphere, and enjoy a day at the ballpark.
                     </p>
                     <p>
-                        Bring your friends, fam, crush, or just yourself. Grab a
-                        drink from the beer garden, get a fresh cut at the
-                        diamond-side barber, catch our free midday drag
-                        performance, eat small batch ice cream, and enjoy a day
-                        of softball and queer fun.
+                        Bring your friends, fam, crush, or just
+                                yourself. Stop by the food truck, grab a drink from the beer garden, get
+                                a fresh cut at the diamond-side barber, catch
+                                our free midday drag performance, eat small
+                                batch ice cream, and enjoy a day of softball and
+                                queer fun.
                     </p>
                     <p>
                         Whether you know someone on the field, love softball,
@@ -110,6 +111,7 @@ export default async function Home() {
                     </p>
                     <ul>
                         <li>🥎 Slow-pitch softball</li>
+                        <li>🍔 Food truck</li>
                         <li>🍺 Beer garden</li>
                         <li>💈 Diamond-side barber</li>
                         <li>👑 Free midday drag performance</li>
@@ -140,7 +142,15 @@ export default async function Home() {
                     />
                 </div>
             </FullWidthSection>
-
+            <FullWidthSection classNames="justify-center">
+                <Image
+                src="/schedule.webp"
+                width={600}
+                height={1000}
+                alt="2026 Tournament Schedule"
+            />
+            </FullWidthSection>
+            <a className="text-center mb-8"href="/schedule.webp" download>Click To Download</a>
             <Card cardClass="card--rose p-6 m-8 lg:mt-0 mb-0">
                 <h2 className="text-center">
                     Registration for 2026 is now closed
@@ -150,7 +160,6 @@ export default async function Home() {
                     North America, making it our biggest tournament yet!
                 </p>
             </Card>
-
             <FullWidthSection classNames="p-6">
                 <Card cardClass="card card--coral w-full flex flex-col items-center lg:flex-row lg:justify-evenly lg:gap-2">
                     <div>

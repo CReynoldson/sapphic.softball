@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Card from "../components/Card";
 import FullWidthSection from "../components/FullWidthSection";
 import Link from "next/link";
@@ -7,17 +8,16 @@ const Tournament = () => (
     <>
         <FullWidthSection classNames="justify-center">
             <div className="p-6 lg:w-4/5">
-                <h1 className="text-center">2026 Tournament</h1>
                 <div className="p-2 flex flex-col gap-6 md:flex-row">
                     <FullWidthSection classNames="lg:flex-wrap">
                         <div className="p-8 lg:order-2">
-                            <h2 className="lg:hidden text-center">
+                            <h1 className="text-center">
                                 <span className="text-4xl">
                                     Saturday, August 29th, 2026
                                 </span>
                                 <br />
                                 3rd Annual Tournament
-                            </h2>
+                            </h1>
                             <p>
                                 Join us for a full day of slow-pitch softball,
                                 drag, cold drinks, and unapologetic queer joy at{" "}
@@ -40,7 +40,7 @@ const Tournament = () => (
                             </p>
                             <p>
                                 Bring your friends, fam, crush, or just
-                                yourself. Grab a drink from the beer garden, get
+                                yourself. Stop by the food truck, grab a drink from the beer garden, get
                                 a fresh cut at the diamond-side barber, catch
                                 our free midday drag performance, eat small
                                 batch ice cream, and enjoy a day of softball and
@@ -54,6 +54,7 @@ const Tournament = () => (
                             </p>
                             <ul>
                                 <li>🥎 Slow-pitch softball</li>
+                                <li>🍔 Food truck</li>
                                 <li>🍺 Beer garden</li>
                                 <li>💈 Diamond-side barber</li>
                                 <li>👑 Free midday drag performance</li>
@@ -92,6 +93,15 @@ const Tournament = () => (
                 </div>
             </div>
         </FullWidthSection>
+        <FullWidthSection classNames="justify-center flex-col">
+            <Image
+                src="/schedule.webp"
+                width={600}
+                height={1000}
+                alt="2026 Tournament Schedule"
+            />
+        </FullWidthSection>
+            <a className="text-center mb-8"href="/schedule.webp" download>Click To Download</a>
         <div>
             <h2 className="text-center">But Wait, There's More!</h2>
             <FullWidthSection classNames="gap-6 justify-center  p-6">
